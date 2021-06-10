@@ -3,7 +3,7 @@ import initAnimacaoScroll from './modules/scroll-animacao.js';
 import initAccordion from './modules/accordion.js';
 import initTabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
-import initTooltip from './modules/tooltip.js';
+import Tooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdownmenu.js'
 import initMenuMobile from './modules/menu-mobile.js'
 import initDate from './modules/date.js';
@@ -16,11 +16,13 @@ scrollSuave.init();
 const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
 modal.init();
 
+const tooltip = new Tooltip('[data-tooltip]');
+tooltip.init();
+
 
 initAnimacaoScroll();
 initAccordion();
 initTabNav();
-initTooltip();
 initDropdownMenu();
 initMenuMobile()
 initDate();
