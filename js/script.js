@@ -1,5 +1,4 @@
 import ScrollSuave from './modules/scroll-suave.js';
-import initAnimacaoScroll from './modules/scroll-animacao.js';
 import initAccordion from './modules/accordion.js';
 import initTabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
@@ -9,6 +8,7 @@ import initMenuMobile from './modules/menu-mobile.js'
 import initDate from './modules/date.js';
 import fetchAnimais from './modules/fetchanimais.js';
 import FetchBitcoin from './modules/fetchbitcoin.js';
+import ScrollAnima from './modules/scroll-anima.js';
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -19,8 +19,9 @@ modal.init();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
+const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
+scrollAnima.init();
 
-initAnimacaoScroll();
 initAccordion();
 initTabNav();
 initDropdownMenu();
