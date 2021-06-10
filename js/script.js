@@ -29,3 +29,5 @@ initDate();
 
 fetchAnimais('./animais.json', '.numeros-grid');
 FetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
+
+console.log('Teste')
